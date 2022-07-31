@@ -11,10 +11,26 @@
   }
 
   a {
-    @apply no-underline duration-300;
+    @apply no-underline;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
   }
 
   img {
     @apply align-middle;
+  }
+}
+
+@layer components {
+  .form-group {
+    @apply flex flex-col;
+  }
+
+  .form-group > label {
+    @apply mb-2;
+  }
+
+  .form-group > input,
+  .form-group > textarea {
+    @apply py-[6px] px-3 mb-4 bg-main-light border border-black appearance-none focus:outline-none focus:border focus:border-main-dark;
   }
 }

@@ -40,7 +40,12 @@ function postcss() {
   return gulp
     .src(envOptions.style.src)
     .pipe(postcss())
-    .pipe(gulp.dest(envOptions.style.path));
+    .pipe(gulp.dest(envOptions.style.path))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      }),
+    );;
 }
 
 function babel() {
