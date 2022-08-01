@@ -1083,6 +1083,9 @@ img{
        -o-transition-duration: 500ms;
           transition-duration: 500ms;
 }
+.max-h-65 {
+    max-height: 260px;
+  }
 .marker\:mb-2 *::marker{
   margin-bottom: 0.5rem;
 }
