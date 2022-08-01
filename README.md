@@ -1,6 +1,8 @@
 # 網頁切版直播班 Gulp 範例 - Tailwind 版本
 
-Demo: [https://yochi-84.github.io/2022SummerClass-week4/](https://yochi-84.github.io/2022SummerClass-week4/)
+> Demo: [https://yochi-84.github.io/2022SummerClass-week4/](https://yochi-84.github.io/2022SummerClass-week4/)
+
+---
 
 > 使用該專案 Gulp 時，就可以不用使用其他編譯工具編譯 SCSS 或是 JavaScript 囉。
 
