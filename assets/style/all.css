@@ -1267,6 +1267,10 @@ img{
     width: 50%;
   }
 
+  .md\:w-8\/12{
+    width: 66.666667%;
+  }
+
   .md\:w-auto{
     width: auto;
   }
