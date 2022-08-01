@@ -1,10 +1,10 @@
 module.exports = {
-  content: ["./app/**/*.{html,ejs}"],
+  content: ["./app/**/*.{html,ejs,js}"],
   theme: {
     screens: {
-      "sm": "605px",
-      "md": "1064px",
-      "lg": "1320px"
+      "md": "605px",
+      "lg": "720px",
+      "xl": "1320px"
     },
     container: {
       center: true,
@@ -46,8 +46,5 @@ module.exports = {
         },
       }
     },
-  },
-  plugins: [
-    // require('@tailwindcss/typography'),
-  ],
+  }
 }

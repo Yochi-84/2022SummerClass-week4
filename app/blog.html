@@ -5,9 +5,11 @@ engine: ejs
 current: blog
 ---
 
-<nav class="hidden bg-main-dark md:block">
+<nav class="bg-main-dark">
   <div class="container flex items-center justify-between">
-    <ul class="font-blod flex gap-x-12 text-xl">
+    <ul
+      class="font-blod flex grow justify-between text-xl lg:justify-start lg:gap-x-12"
+    >
       <li class="py-[13px]">
         <a
           href="#"
@@ -38,194 +40,204 @@ current: blog
       </li>
     </ul>
     <span
-      class="material-symbols-outlined cursor-pointer select-none text-[40px] text-white"
+      class="material-symbols-outlined hidden cursor-pointer select-none text-[40px] text-white lg:inline"
       >search</span
     >
   </div>
 </nav>
 <main class="container">
-  <section data-target="list" class="pt-10 pb-16 md:py-20">
+  <section data-target="list" class="pt-10 pb-16 lg:py-20">
     <h1
-      class="mb-6 border-l-8 border-l-main-deep pl-3 text-2xl font-bold md:mb-8 md:text-5xl"
+      class="mb-6 border-l-8 border-l-main-deep pl-3 text-2xl font-bold lg:mb-8 lg:text-5xl"
     >
       部落格
     </h1>
-    <ul class="mb-16 md:-mx-3 md:mb-20">
-      <li class="relative mb-6 md:flex lg:mb-[60px]">
-        <div class="mb-2 md:mb-0 md:w-1/2 md:px-3">
+    <ul class="mb-16 lg:-mx-3 lg:mb-20">
+      <li class="relative mb-6 lg:flex xl:mb-[60px]">
+        <div class="mb-2 lg:mb-0 lg:w-1/2 lg:px-3">
           <a
             href="blog.html?id=1"
-            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] md:after:hidden"
+            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] lg:after:hidden"
           >
             <img
               src="./assets/images/blog-1.png"
               alt="情人特別企劃"
-              class="w-full"
+              class="h-full w-full object-cover"
             />
           </a>
         </div>
-        <div class="flex flex-wrap content-between md:w-1/2 md:px-3">
+        <div class="flex flex-wrap content-between lg:w-1/2 lg:px-3">
           <div class="w-full">
-            <h2 class="text-2xl text-main-dark lg:text-[32px]">情人特別企劃</h2>
+            <h2 class="text-2xl text-main-dark xl:text-[32px]">情人特別企劃</h2>
             <div
-              class="flex items-center justify-between font-medium md:mb-1 md:text-xl lg:mb-4"
+              class="flex items-center justify-between font-medium lg:mb-1 lg:text-xl xl:mb-4"
             >
               <h3>2020 Valentine’s Special</h3>
               <small class="text-black/70">2020/02/14</small>
             </div>
-            <p class="text-gray-content hidden md:block lg:text-xl">
+            <p class="hidden text-gray-content lg:block xl:text-xl">
               一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻⋯⋯
-              <a href="blog.html?id=1" class="text-gray-content lg:hidden">more</a>
+              <a href="blog.html?id=1" class="text-gray-content xl:hidden"
+                >more</a
+              >
             </p>
           </div>
           <a
             href="blog.html?id=1"
-            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main lg:block"
+            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main xl:block"
             >More</a
           >
         </div>
       </li>
-      <li class="relative mb-6 md:flex lg:mb-[60px]">
-        <div class="mb-2 md:mb-0 md:w-1/2 md:px-3">
+      <li class="relative mb-6 lg:flex xl:mb-[60px]">
+        <div class="mb-2 lg:mb-0 lg:w-1/2 lg:px-3">
           <a
             href="blog.html?id=2"
-            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] md:after:hidden"
+            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] lg:after:hidden"
           >
             <img
               src="./assets/images/blog-2.png"
               alt="街頭潮人訪問"
-              class="w-full"
+              class="h-full w-full object-cover"
             />
           </a>
         </div>
-        <div class="flex flex-wrap content-between md:w-1/2 md:px-3">
+        <div class="flex flex-wrap content-between lg:w-1/2 lg:px-3">
           <div class="w-full">
-            <h2 class="text-2xl text-main-dark lg:text-[32px]">街頭潮人訪問</h2>
+            <h2 class="text-2xl text-main-dark xl:text-[32px]">街頭潮人訪問</h2>
             <div
-              class="flex items-center justify-between font-medium md:mb-1 md:text-xl lg:mb-4"
+              class="flex items-center justify-between font-medium lg:mb-1 lg:text-xl xl:mb-4"
             >
               <h3>Street Interview</h3>
               <small class="text-black/70">2020/02/02</small>
             </div>
-            <p class="text-gray-content hidden md:block lg:text-xl">
+            <p class="hidden text-gray-content lg:block xl:text-xl">
               炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
               恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的
               3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯
-              <a href="blog.html?id=2" class="text-gray-content lg:hidden">more</a>
+              <a href="blog.html?id=2" class="text-gray-content xl:hidden"
+                >more</a
+              >
             </p>
           </div>
           <a
             href="blog.html?id=2"
-            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main lg:block"
+            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main xl:block"
             >More</a
           >
         </div>
       </li>
-      <li class="relative mb-6 md:flex lg:mb-[60px]">
-        <div class="mb-2 md:mb-0 md:w-1/2 md:px-3">
+      <li class="relative mb-6 lg:flex xl:mb-[60px]">
+        <div class="mb-2 lg:mb-0 lg:w-1/2 lg:px-3">
           <a
             href="blog.html?id=3"
-            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] md:after:hidden"
+            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] lg:after:hidden"
           >
             <img
               src="./assets/images/blog-3.png"
               alt="春季新品上市"
-              class="w-full"
+              class="h-full w-full object-cover"
             />
           </a>
         </div>
-        <div class="flex flex-wrap content-between md:w-1/2 md:px-3">
+        <div class="flex flex-wrap content-between lg:w-1/2 lg:px-3">
           <div class="w-full">
-            <h2 class="text-2xl text-main-dark lg:text-[32px]">春季新品上市</h2>
+            <h2 class="text-2xl text-main-dark xl:text-[32px]">春季新品上市</h2>
             <div
-              class="flex items-center justify-between font-medium md:mb-1 md:text-xl lg:mb-4"
+              class="flex items-center justify-between font-medium lg:mb-1 lg:text-xl xl:mb-4"
             >
               <h3>New Selection</h3>
               <small class="text-black/70">2020/02/02</small>
             </div>
-            <p class="text-gray-content hidden md:block lg:text-xl">
+            <p class="hidden text-gray-content lg:block xl:text-xl">
               2020
               年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
-              <a href="blog.html?id=3" class="text-gray-content lg:hidden">more</a>
+              <a href="blog.html?id=3" class="text-gray-content xl:hidden"
+                >more</a
+              >
             </p>
           </div>
           <a
             href="blog.html?id=3"
-            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main lg:block"
+            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main xl:block"
             >More</a
           >
         </div>
       </li>
-      <li class="relative mb-6 md:flex lg:mb-[60px]">
-        <div class="mb-2 md:mb-0 md:w-1/2 md:px-3">
+      <li class="relative mb-6 lg:flex xl:mb-[60px]">
+        <div class="mb-2 lg:mb-0 lg:w-1/2 lg:px-3">
           <a
             href="blog.html?id=4"
-            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] md:after:hidden"
+            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] lg:after:hidden"
           >
             <img
               src="./assets/images/blog-4.png"
               alt="設計師獨享鏡框優惠"
-              class="w-full"
+              class="h-full w-full object-cover"
             />
           </a>
         </div>
-        <div class="flex flex-wrap content-between md:w-1/2 md:px-3">
+        <div class="flex flex-wrap content-between lg:w-1/2 lg:px-3">
           <div class="w-full">
-            <h2 class="text-2xl text-main-dark lg:text-[32px]">
+            <h2 class="text-2xl text-main-dark xl:text-[32px]">
               設計師獨享鏡框優惠
             </h2>
             <div
-              class="flex items-center justify-between font-medium md:mb-1 md:text-xl lg:mb-4"
+              class="flex items-center justify-between font-medium lg:mb-1 lg:text-xl xl:mb-4"
             >
               <h3>Sales for Designer</h3>
               <small class="text-black/70">2020/01/18</small>
             </div>
-            <p class="text-gray-content hidden md:block lg:text-xl">
+            <p class="hidden text-gray-content lg:block xl:text-xl">
               2020
               年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
-              <a href="blog.html?id=4" class="text-gray-content lg:hidden">more</a>
+              <a href="blog.html?id=4" class="text-gray-content xl:hidden"
+                >more</a
+              >
             </p>
           </div>
           <a
             href="blog.html?id=4"
-            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main lg:block"
+            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main xl:block"
             >More</a
           >
         </div>
       </li>
-      <li class="relative mb-6 md:flex lg:mb-[60px]">
-        <div class="mb-2 md:mb-0 md:w-1/2 md:px-3">
+      <li class="relative mb-6 lg:flex xl:mb-[60px]">
+        <div class="mb-2 lg:mb-0 lg:w-1/2 lg:px-3">
           <a
             href="blog.html?id=5"
-            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] md:after:hidden"
+            class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] lg:after:hidden"
           >
             <img
               src="./assets/images/blog-5.png"
               alt="抵抗夏日大作戰"
-              class="w-full"
+              class="h-full w-full object-cover"
             />
           </a>
         </div>
-        <div class="flex flex-wrap content-between md:w-1/2 md:px-3">
+        <div class="flex flex-wrap content-between lg:w-1/2 lg:px-3">
           <div class="w-full">
-            <h2 class="text-2xl text-main-dark lg:text-[32px]">
+            <h2 class="text-2xl text-main-dark xl:text-[32px]">
               抵抗夏日大作戰
             </h2>
             <div
-              class="flex items-center justify-between font-medium md:mb-1 md:text-xl lg:mb-4"
+              class="flex items-center justify-between font-medium lg:mb-1 lg:text-xl xl:mb-4"
             >
               <h3>Summer Special</h3>
               <small class="text-black/70">2019/08/07</small>
             </div>
-            <p class="text-gray-content hidden md:block lg:text-xl">
+            <p class="hidden text-gray-content lg:block xl:text-xl">
               2020
               年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯
-              <a href="blog.html?id=5" class="text-gray-content lg:hidden">more</a>
+              <a href="blog.html?id=5" class="text-gray-content xl:hidden"
+                >more</a
+              >
             </p>
           </div>
           <a
             href="blog.html?id=5"
-            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main lg:block"
+            class="ml-auto hidden text-4xl font-black uppercase text-main-dark hover:text-main xl:block"
             >More</a
           >
         </div>
@@ -236,14 +248,14 @@ current: blog
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-[#555] pt-[10px] pr-[12px] pb-[10px] pl-[13px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-[#555] pt-[10px] pr-[12px] pb-[10px] pl-[13px] text-gray-content hover:bg-main-dark hover:text-white"
           >上一頁</a
         >
       </li>
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-[#555] py-[10px] px-[14px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-[#555] py-[10px] px-[14px] text-gray-content hover:bg-main-dark hover:text-white"
           >1</a
         >
       </li>
@@ -257,42 +269,51 @@ current: blog
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-[#555] py-[10px] px-[14px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-[#555] py-[10px] px-[14px] text-gray-content hover:bg-main-dark hover:text-white"
           >3</a
         >
       </li>
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-[#555] py-[10px] px-[14px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-[#555] py-[10px] px-[14px] text-gray-content hover:bg-main-dark hover:text-white"
           >4</a
         >
       </li>
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-[#555] py-[10px] px-[14px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-[#555] py-[10px] px-[14px] text-gray-content hover:bg-main-dark hover:text-white"
           >5</a
         >
       </li>
       <li>
         <a
           href="#"
-          class="text-gray-content block border-y border-l border-r border-[#555] pt-[10px] pr-[13px] pb-[10px] pl-[12px] hover:bg-main-dark hover:text-white"
+          class="block border-y border-l border-r border-[#555] pt-[10px] pr-[13px] pb-[10px] pl-[12px] text-gray-content hover:bg-main-dark hover:text-white"
           >下一頁</a
         >
       </li>
     </ul>
   </section>
-  <section data-target="detail" class="pt-4 pb-16 md:pt-2 md:pb-20 lg:pt-6">
+  <section
+    data-target="detail"
+    class="hidden pt-4 pb-16 lg:pt-2 lg:pb-20 xl:pt-6"
+  >
     <ul class="mb-2 flex">
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="index.html">首頁</a>
       </li>
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="blog.html">部落格</a>
       </li>
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="blog.html">特別企劃</a>
       </li>
       <li class="">
@@ -301,38 +322,138 @@ current: blog
     </ul>
     <ul class="mb-2 flex gap-x-4">
       <li>
-        <a href="#" class="text-2xl font-bold text-main">#special</a>
+        <a href="#" class="text-2xl font-bold text-main hover:text-main-dark"
+          >#special</a
+        >
       </li>
       <li>
-        <a href="#" class="text-2xl font-bold text-main">#event</a>
+        <a href="#" class="text-2xl font-bold text-main hover:text-main-dark"
+          >#event</a
+        >
       </li>
     </ul>
-    <h2 class="text-2xl md:text-5xl">情人特別企劃</h2>
-    <h3 class="font-medium md:text-2xl mb-4 md:mb-6 lg:mb-4">2020 Valentine’s Special</h3>
-    <img src="./assets/images/blogpage-1.png" alt="image" class="max-w-full mb-2">
-    <p class="mb-4 md:mb-6 lg:mb-10 text-gray-content">
-      一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
-      本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-    </p>
-    <img src="./assets/images/blogpage-2.png" alt="image" class="max-w-full mb-2">
-    <p class="mb-4 md:mb-6 lg:mb-10 text-gray-content">
-      一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
-      本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-    </p>
-    <img src="./assets/images/blogpage-3.png" alt="image" class="max-w-full mb-2">
-    <p class="mb-4 md:mb-6 lg:mb-10 text-gray-content">
-      一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
-      本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-    </p>
-    <img src="./assets/images/blogpage-4.png" alt="image" class="max-w-full mb-2">
-    <p class="text-gray-content">
-      2/14(五)-2/20(日)<br>
-      至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br>
-      期間優惠還有~~持他牌鏡框更換鏡片<br>
-      薄型非球面鏡片折300元<br>
-      濾藍光鏡片折500元<br>
-      快快帶上另一半<br>
-      讓彼此每一次睜開眼，都被愛的視線包圍!
-    </p>
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-9/12 lg:pr-3 xl:w-8/12">
+        <h2 class="text-2xl lg:text-5xl">情人特別企劃</h2>
+        <h3 class="mb-4 font-medium lg:mb-6 lg:text-2xl xl:mb-4">
+          2020 Valentine’s Special
+        </h3>
+        <img
+          src="./assets/images/blogpage-1.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content lg:mb-6 xl:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-2.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content lg:mb-6 xl:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-3.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content lg:mb-6 xl:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-4.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="text-gray-content lg:mb-10">
+          2/14(五)-2/20(日)<br />
+          至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br />
+          期間優惠還有~~持他牌鏡框更換鏡片<br />
+          薄型非球面鏡片折300元<br />
+          濾藍光鏡片折500元<br />
+          快快帶上另一半<br />
+          讓彼此每一次睜開眼，都被愛的視線包圍!
+        </p>
+        <div class="mb-4 hidden items-center lg:flex">
+          <span class="mr-4 font-bold">Share</span>
+          <ul class="flex gap-x-4">
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/images/logo-facebook.png"
+                  alt="Facebook"
+                  class="h-6 w-6 lg:hover:drop-shadow-[0_0_4px_#aa0601]"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/images/logo-instagram.png"
+                  alt="Instagram"
+                  class="h-6 w-6 lg:hover:drop-shadow-[0_0_4px_#aa0601]"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="hidden pl-3 lg:block lg:w-3/12 xl:w-4/12">
+        <h2
+          class="mb-2 flex items-center text-2xl font-bold uppercase text-main xl:mb-1 xl:text-[32px]"
+        >
+          <span
+            class="material-symbols-outlined mr-[2px] text-base xl:mr-3 xl:text-5xl"
+            >label</span
+          >Tags
+        </h2>
+        <ul
+          class="flex flex-wrap gap-x-4 text-base font-bold xl:w-3/4 xl:gap-x-6 xl:gap-y-1 xl:text-2xl"
+        >
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#special</a>
+          </li>
+          <li><a href="#" class="text-main hover:text-main-dark">#sale</a></li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#new_item</a>
+          </li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#interview</a>
+          </li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#trivia</a>
+          </li>
+          <li><a href="#" class="text-main hover:text-main-dark">#news</a></li>
+          <li><a href="#" class="text-main hover:text-main-dark">#event</a></li>
+        </ul>
+      </aside>
+      <ul
+        class="hidden pt-6 before:absolute before:top-0 before:left-0 before:h-[1px] before:bg-gray-dark before:content-[''] lg:relative lg:flex lg:w-full lg:justify-between lg:before:w-full xl:w-8/12 xl:pr-3 xl:before:w-[calc(100%-12px)]"
+      >
+        <li>
+          <a href="#" class="text-black hover:text-main">
+            <span class="material-symbols-outlined mr-3 align-middle"
+              >arrow_back</span
+            ><span class="align-middle">上一篇：街頭潮人訪問 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-main">
+            <span class="align-middle">下一篇：街頭潮人訪問 2</span
+            ><span class="material-symbols-outlined ml-3 align-middle"
+              >arrow_forward</span
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>

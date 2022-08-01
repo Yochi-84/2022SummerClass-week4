@@ -36,7 +36,7 @@
 
   /* header 連結底線 */
   .link {
-    @apply md:relative md:after:left-0 md:after:absolute md:after:bottom-0 md:after:h-[2px] md:after:w-full md:after:bg-white after:content-[''] md:cursor-default md:pointer-events-none;
+    @apply lg:relative lg:after:left-0 lg:after:absolute lg:after:bottom-0 lg:after:h-[2px] lg:after:w-full lg:after:bg-white after:content-[''] lg:cursor-default lg:pointer-events-none;
   }
 
   /* tabs active 底線 */
