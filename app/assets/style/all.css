@@ -25,12 +25,28 @@
     @apply flex flex-col;
   }
 
-  .form-group > label {
+  .form-group>label {
     @apply mb-2;
   }
 
-  .form-group > input,
-  .form-group > textarea {
-    @apply py-[6px] px-3 mb-4 bg-main-light border border-black appearance-none focus:outline-none focus:border focus:border-main-dark;
+  .form-group>input,
+  .form-group>textarea {
+    @apply py-[6px] px-3 mb-4 bg-main-light border border-black appearance-none focus:outline-none focus:ring-main-dark focus:ring-1;
+  }
+
+  /* header 連結底線 */
+  .link {
+    @apply md:relative md:after:left-0 md:after:absolute md:after:bottom-0 md:after:h-[2px] md:after:w-full md:after:bg-white after:content-[''] md:cursor-default md:pointer-events-none;
+  }
+
+  /* tabs active 底線 */
+  .active {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-2 after:w-full after:bg-main after:content-[''];
+  }
+}
+
+@layer utilities {
+  .max-h-65 {
+    max-height: 260px;
   }
 }
