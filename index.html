@@ -30,34 +30,34 @@
           menu
         </div>
         <ul
-          class="absolute top-20 right-0 hidden w-full bg-gray-dark text-center text-lg md:static md:flex md:w-auto md:gap-x-16 md:bg-transparent md:text-base"
+          class="absolute top-20 right-0 max-h-0 w-full overflow-hidden bg-gray-dark text-center text-lg duration-500 md:static md:flex md:max-h-full md:w-auto md:gap-x-16 md:bg-transparent md:text-base md:duration-[0s]"
           id="menu-list"
         >
-          <li class="border-b border-b-white md:border-b-0">
+          <li class="border-b border-b-white py-4 md:border-b-0">
             <a
               href="product.html"
-              class="block py-4 text-white hover:-translate-y-1"
+              class="hover:-translate-y-1 block text-white md:text-xl"
               >系列鏡框</a
             >
           </li>
-          <li class="border-b border-b-white md:border-b-0">
+          <li class="border-b border-b-white py-4 md:border-b-0">
             <a
               href="store.html"
-              class="block py-4 text-white hover:-translate-y-1"
+              class="hover:-translate-y-1 block text-white md:text-xl"
               >門市據點</a
             >
           </li>
-          <li class="border-b border-b-white md:border-b-0">
+          <li class="border-b border-b-white py-4 md:border-b-0">
             <a
               href="blog.html"
-              class="block py-4 text-white hover:-translate-y-1"
+              class="hover:-translate-y-1 block text-white md:text-xl"
               >部落格</a
             >
           </li>
-          <li>
+          <li class="py-4">
             <a
               href="faq.html"
-              class="block py-4 text-white hover:-translate-y-1"
+              class="hover:-translate-y-1 block text-white md:text-xl"
               >常見問題</a
             >
           </li>
@@ -68,20 +68,18 @@
     
 <main>
   <section
-    class="flex h-[396px] items-center justify-end bg-[url('../images/home-header-sm.png')] bg-cover bg-center md:bg-[url('../images/home-header.png')]"
+    class="flex h-[396px] items-center justify-end bg-[url('../images/home-header-sm.png')] bg-cover bg-center md:h-[787px] md:bg-[url('../images/home-header.png')] lg:h-screen"
   >
     <div class="container text-right">
       <h1 class="text-base text-main-dark md:text-4xl">
         Promise-Desert 2020 早春系列
       </h1>
-      <p
-        class="mb-2 text-2xl font-bold text-main-dark md:text-[64px] md:leading-normal"
-      >
+      <p class="mb-2 text-2xl font-bold text-main-dark md:text-[64px]">
         看得清，才能看得遠
       </p>
       <a
-        href="#"
-        class="inline-block bg-main px-3 pt-[6px] pb-[5px] font-medium text-white hover:bg-main-dark"
+        href="product.html"
+        class="inline-block bg-main px-3 pt-[6px] pb-[5px] font-medium text-white hover:bg-main-dark md:text-xl"
         >立即購買</a
       >
     </div>
@@ -89,19 +87,17 @@
   <section class="bg-main-light py-10 md:py-20">
     <div class="container">
       <h2
-        class="mb-6 text-center text-2xl font-bold leading-normal text-main-dark md:text-5xl md:leading-normal"
+        class="mb-6 text-center text-2xl font-bold text-main-dark md:text-5xl"
       >
         用專業的心，做專業的事
       </h2>
-      <ul class="flex flex-wrap gap-y-6 text-center">
+      <ul class="flex flex-wrap gap-y-6 text-center md:-mx-3">
         <li class="w-full md:w-1/2 md:px-3 lg:w-1/4">
           <span
             class="material-symbols-outlined mb-4 select-none text-[100px] text-main-dark"
             >paid</span
           >
-          <h3 class="mb-2 text-2xl font-bold leading-normal text-main-dark">
-            單一價格
-          </h3>
+          <h3 class="mb-2 text-2xl font-bold text-main-dark">單一價格</h3>
           <p class="text-left">
             無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
           </p>
@@ -111,7 +107,7 @@
             class="material-symbols-outlined mb-4 select-none text-[100px] text-main-dark"
             >schedule</span
           >
-          <h3 class="mb-2 text-2xl font-bold leading-normal text-main-dark">
+          <h3 class="mb-2 text-2xl font-bold text-main-dark">
             20 分鐘即可取件
           </h3>
           <p class="text-left">
@@ -124,9 +120,7 @@
             class="material-symbols-outlined mb-4 select-none text-[100px] text-main-dark"
             >favorite</span
           >
-          <h3 class="mb-2 text-2xl font-bold leading-normal text-main-dark">
-            安心售後服務
-          </h3>
+          <h3 class="mb-2 text-2xl font-bold text-main-dark">安心售後服務</h3>
           <p class="text-left">
             我們提供長達 120
             天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
@@ -137,9 +131,7 @@
             class="material-symbols-outlined mb-4 select-none text-[100px] text-main-dark"
             >voicemail</span
           >
-          <h3 class="mb-2 text-2xl font-bold leading-normal text-main-dark">
-            關於鏡片
-          </h3>
+          <h3 class="mb-2 text-2xl font-bold text-main-dark">關於鏡片</h3>
           <p class="text-left">
             使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
           </p>
@@ -150,11 +142,13 @@
   <section class="py-10 md:py-20">
     <div class="container">
       <h2
-        class="mb-6 text-center text-2xl font-bold leading-normal text-main-dark md:text-5xl md:leading-normal"
+        class="mb-6 text-center text-2xl font-bold text-main-dark md:text-5xl"
       >
         經典系列鏡框
       </h2>
-      <ul class="flex flex-wrap gap-y-6 text-center">
+      <ul
+        class="flex flex-wrap gap-y-6 text-center md:-mx-3 md:justify-center md:gap-x-1 lg:gap-x-0"
+      >
         <li class="group relative w-full md:w-1/2 md:px-3 lg:w-1/3">
           <div class="overflow-hidden">
             <img
@@ -168,7 +162,7 @@
             class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-['']"
           >
             <h3
-              class="text-5xl font-black uppercase italic leading-normal text-main duration-300 group-hover:text-main-dark"
+              class="text-5xl font-black uppercase italic text-main duration-300 group-hover:text-main-dark"
             >
               Optical
             </h3>
@@ -187,7 +181,7 @@
             class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-['']"
           >
             <h3
-              class="text-5xl font-black uppercase italic leading-normal text-main duration-300 group-hover:text-main-dark"
+              class="text-5xl font-black uppercase italic text-main duration-300 group-hover:text-main-dark"
             >
               Sunglasses
             </h3>
@@ -206,7 +200,7 @@
             class="after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-['']"
           >
             <h3
-              class="text-5xl font-black uppercase italic leading-normal text-main duration-300 group-hover:text-main-dark"
+              class="text-5xl font-black uppercase italic text-main duration-300 group-hover:text-main-dark"
             >
               Functional
             </h3>
@@ -219,18 +213,16 @@
     class="bg-[url('../images/index-bg-sm.png')] py-10 md:bg-[url('../images/index-bg-md.png')] md:py-20 lg:bg-[url('../images/index-bg.png')]"
   >
     <div class="container">
-      <h2
-        class="mb-6 text-center text-2xl font-bold leading-normal text-white md:text-5xl md:leading-normal"
-      >
+      <h2 class="mb-6 text-center text-2xl font-bold text-white md:text-5xl">
         聯名設計鏡框
       </h2>
-      <ul class="flex flex-wrap gap-y-6 text-center">
+      <ul class="flex flex-wrap gap-y-6 text-center md:-mx-3">
         <li class="group relative w-full lg:w-1/2 lg:pl-3">
           <div
             class="bg-[url('../images/home-section4-1-sm.png')] bg-cover bg-center pt-[68.97%] md:bg-[url('../images/home-section4-1.png')] md:pt-[34.48%]"
           ></div>
           <h3
-            class="bg-white py-2 text-center text-5xl font-black uppercase italic leading-normal text-main"
+            class="bg-white py-2 text-center text-5xl font-black uppercase italic text-main"
           >
             Double A+
           </h3>
@@ -240,7 +232,7 @@
             class="bg-[url('../images/home-section4-2-sm.png')] bg-cover bg-center pt-[68.97%] md:bg-[url('../images/home-section4-2.png')] md:pt-[34.48%]"
           ></div>
           <h3
-            class="bg-white py-2 text-center text-5xl font-black uppercase italic leading-normal text-main"
+            class="bg-white py-2 text-center text-5xl font-black uppercase italic text-main"
           >
             Youth
           </h3>
@@ -251,13 +243,13 @@
   <section class="py-10 md:py-20">
     <div class="container">
       <h2
-        class="mb-6 text-center text-2xl font-bold leading-normal text-main-dark md:text-5xl md:leading-normal"
+        class="mb-6 text-center text-2xl font-bold text-main-dark md:text-5xl"
       >
         顧客推薦
       </h2>
-      <ul class="flex flex-wrap gap-y-6">
+      <ul class="flex flex-wrap gap-y-6 md:-mx-3">
         <li class="w-full md:w-1/2 md:px-2 lg:w-1/4">
-          <div class="rounded shadow-[0_2px_6px_#d6d6d6]">
+          <div class="relative h-full rounded shadow-[0_2px_6px_#d6d6d6]">
             <img
               src="./assets/images/home-section5-1.png"
               alt="Jessy"
@@ -266,14 +258,14 @@
             <div class="p-4">
               <h3 class="mb-2 font-medium">Jessy</h3>
               <p class="mb-[72px]">眼鏡品質優良，下次還會想來這邊購買！</p>
-              <small class="text-sm leading-normal text-gray-dark"
+              <small class="absolute left-4 bottom-4 text-sm text-gray-dark"
                 >2021/06/20</small
               >
             </div>
           </div>
         </li>
-        <li class="w-full md:px-2 md:w-1/2 lg:w-1/4">
-          <div class="rounded shadow-[0_2px_6px_#d6d6d6]">
+        <li class="w-full md:w-1/2 md:px-2 lg:w-1/4">
+          <div class="relative h-full rounded shadow-[0_2px_6px_#d6d6d6]">
             <img
               src="./assets/images/home-section5-2.png"
               alt="凱倫"
@@ -284,14 +276,14 @@
               <p class="mb-[72px]">
                 做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
               </p>
-              <small class="text-sm leading-normal text-gray-dark"
+              <small class="absolute left-4 bottom-4 text-sm text-gray-dark"
                 >2021/04/18</small
               >
             </div>
           </div>
         </li>
-        <li class="w-full md:px-2 md:w-1/2 lg:w-1/4">
-          <div class="rounded shadow-[0_2px_6px_#d6d6d6]">
+        <li class="w-full md:w-1/2 md:px-2 lg:w-1/4">
+          <div class="relative h-full rounded shadow-[0_2px_6px_#d6d6d6]">
             <img
               src="./assets/images/home-section5-3.png"
               alt="悠悠"
@@ -302,14 +294,14 @@
               <p class="mb-[72px]">
                 謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
               </p>
-              <small class="text-sm leading-normal text-gray-dark"
+              <small class="absolute left-4 bottom-4 text-sm text-gray-dark"
                 >2020/12/25</small
               >
             </div>
           </div>
         </li>
-        <li class="w-full md:px-2 md:w-1/2 lg:w-1/4">
-          <div class="rounded shadow-[0_2px_6px_#d6d6d6]">
+        <li class="w-full md:w-1/2 md:px-2 lg:w-1/4">
+          <div class="relative h-full rounded shadow-[0_2px_6px_#d6d6d6]">
             <img
               src="./assets/images/home-section5-4.png"
               alt="Kyuan"
@@ -318,7 +310,7 @@
             <div class="p-4">
               <h3 class="mb-2 font-medium">Kyuan</h3>
               <p class="mb-[72px]">服務很好，品質沒有任何問題，非常喜歡。</p>
-              <small class="text-sm leading-normal text-gray-dark"
+              <small class="absolute left-4 bottom-4 text-sm text-gray-dark"
                 >2020/10/31</small
               >
             </div>
@@ -328,64 +320,103 @@
     </div>
   </section>
   <section class="bg-main-light py-10 md:py-20">
-    <div class="container md:px-[60px]">
+    <div class="container md:px-[60px] lg:w-1/2">
       <h2
-        class="mb-6 text-center text-2xl font-bold leading-normal text-main-dark md:text-5xl md:leading-normal"
+        class="mb-6 text-center text-2xl font-bold text-main-dark md:text-5xl"
       >
         聯絡我們
       </h2>
-      <p class="mb-6 text-justify">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <p class="mb-6 text-justify">
+        我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+      </p>
       <form action="#" class="form-group">
         <label for="name">姓名</label>
-        <input type="text" id="name" class="placeholder:text-black/20 focus:accent-main-dark" placeholder="陳小明">
+        <input
+          type="text"
+          id="name"
+          class="placeholder:text-black/20"
+          placeholder="陳小明"
+        />
         <label for="tel">電話</label>
-        <input type="tel" id="tel" class="placeholder:text-black/20" placeholder="0912-345-678">
+        <input
+          type="tel"
+          id="tel"
+          class="placeholder:text-black/20"
+          placeholder="0912-345-678"
+        />
         <label for="email">電子郵件</label>
-        <input type="email" id="email" class="placeholder:text-black/20" placeholder="example@email.com">
+        <input
+          type="email"
+          id="email"
+          class="placeholder:text-black/20"
+          placeholder="example@email.com"
+        />
         <label for="suggestion">意見反應</label>
-        <textarea name="suggestion" id="suggestion" cols="30" rows="5" class="placeholder:text-black/20" placeholder="請輸入您的意見"></textarea>
-        <div class="flex mb-6">
-          <input type="checkbox" class="accent-main-dark mr-1 border-2" id="policy">
-          <label for="policy">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        <textarea
+          name="suggestion"
+          id="suggestion"
+          cols="30"
+          rows="5"
+          class="placeholder:text-black/20"
+          placeholder="請輸入您的意見"
+        ></textarea>
+        <div class="mb-6 flex">
+          <input
+            type="checkbox"
+            class="mr-1 border-2 accent-main-dark"
+            id="policy"
+          />
+          <label for="policy"
+            >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+          >
         </div>
-        <a href="#" class="bg-main text-white font-bold text-center py-4 md:inline-block md:self-center md:px-[136px] lg:px-[176px] hover:bg-main-dark">確認送出</a>
+        <a
+          href="#"
+          class="bg-main py-4 text-center font-bold text-white hover:bg-main-dark md:inline-block md:self-center md:px-[136px] lg:px-[176px]"
+          >確認送出</a
+        >
       </form>
     </div>
   </section>
-
 </main>
 
 
     <footer class="bg-main py-6">
-      <div
-        class="container mb-8 flex items-start justify-between border-b border-b-white pb-6"
-      >
-        <div class="-ml-3">
+      <div class="container mb-6 flex items-start justify-between">
+        <div>
           <ul class="hidden md:mb-[44.98px] md:flex md:gap-x-12">
             <li>
-              <a href="index.html" class="block text-white md:hover:-translate-y-1"
+              <a
+                href="index.html"
+                class="link block text-white"
                 >首頁</a
               >
             </li>
             <li>
               <a
                 href="product.html"
-                class="block text-white md:hover:-translate-y-1"
+                class="md:hover:-translate-y-1 block text-white"
                 >系列鏡框</a
               >
             </li>
             <li>
-              <a href="store.html" class="block text-white md:hover:-translate-y-1"
+              <a
+                href="store.html"
+                class="md:hover:-translate-y-1 block text-white"
                 >門市據點</a
               >
             </li>
             <li>
-              <a href="blog.html" class="block text-white md:hover:-translate-y-1"
+              <a
+                href="blog.html"
+                class="md:hover:-translate-y-1 block text-white"
                 >部落格</a
               >
             </li>
             <li>
-              <a href="faq.html" class="block text-white md:hover:-translate-y-1"
+              <a
+                href="faq.html"
+                class="md:hover:-translate-y-1 block text-white"
                 >常見問題</a
               >
             </li>
@@ -397,7 +428,7 @@
                 >call</span
               ><a
                 href="tel:0800-000-000"
-                class="border-b border-b-transparent align-middle md:group-hover:border-b-white md:text-4xl"
+                class="border-b border-b-transparent align-middle md:text-4xl md:group-hover:border-b-white"
                 >0800-000-000</a
               >
             </li>
@@ -407,18 +438,18 @@
                 >mail</span
               ><a
                 href="mailto:glasses@business.com"
-                class="border-b border-b-transparent align-middle md:group-hover:border-b-white md:text-4xl"
+                class="border-b border-b-transparent align-middle md:text-4xl md:group-hover:border-b-white"
                 >glasses@business.com</a
               >
             </li>
           </ul>
         </div>
-        <ul class="-mr-3 flex items-center gap-x-2 md:gap-x-4 lg:gap-x-8">
+        <ul class="flex items-center gap-x-2 md:gap-x-4 lg:gap-x-8">
           <li>
             <a href="#">
               <img
                 src="./assets/images/ic-social-fb.png"
-                class="h-6 w-6 md:hover:drop-shadow-[0_0_5px_#fff] md:h-10 md:w-10 lg:h-12 lg:w-12"
+                class="h-6 w-6 md:h-10 md:w-10 md:hover:drop-shadow-[0_0_5px_#fff] lg:h-12 lg:w-12"
                 alt="Facebook"
               />
             </a>
@@ -427,7 +458,7 @@
             <a href="#">
               <img
                 src="./assets/images/ic_social_ig.png"
-                class="h-6 w-6 md:hover:drop-shadow-[0_0_5px_#fff] md:h-10 md:w-10 lg:h-12 lg:w-12"
+                class="h-6 w-6 md:h-10 md:w-10 md:hover:drop-shadow-[0_0_5px_#fff] lg:h-12 lg:w-12"
                 alt="Instagram"
               />
             </a>
@@ -436,31 +467,34 @@
             <a href="#">
               <img
                 src="./assets/images/ic_social_line.png"
-                class="h-6 w-6 md:hover:drop-shadow-[0_0_5px_#fff] md:h-10 md:w-10 lg:h-12 lg:w-12"
+                class="h-6 w-6 md:h-10 md:w-10 md:hover:drop-shadow-[0_0_5px_#fff] lg:h-12 lg:w-12"
                 alt="Line"
               />
             </a>
           </li>
         </ul>
       </div>
-      <div class="container md:flex md:justify-between">
-        <p class="-ml-3 mb-2 text-white">
-          Copyright © 2020 Glasses.All rights reserved.
-        </p>
-        <ul class="-ml-3 md:ml-0 md:-mr-3 md:flex md:items-center md:gap-x-12">
-          <li class="mb-2 md:mb-0">
-            <a href="#" class="block text-white md:hover:-translate-y-1"
-              >隱私權政策</a
-            >
-          </li>
-          <li>
-            <a href="#" class="block text-white md:hover:-translate-y-1"
-              >服務條款</a
-            >
-          </li>
-        </ul>
+      <div class="container">
+        <div class="border-t border-t-white pt-8 md:flex md:justify-between">
+          <p class="mb-2 text-white">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
+          <ul class="md:flex md:items-center md:gap-x-12">
+            <li class="mb-2 md:mb-0">
+              <a href="#" class="block text-white md:hover:-translate-y-1"
+                >隱私權政策</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block text-white md:hover:-translate-y-1"
+                >服務條款</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+    <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
