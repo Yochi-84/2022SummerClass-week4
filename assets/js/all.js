@@ -2,7 +2,12 @@
 
 // 漢堡選單
 document.querySelector("#hamburger-menu-icon").addEventListener("click", function () {
-  document.querySelector("#menu-list").classList.toggle("max-h-65");
+  var dom = document.querySelector("#menu-list");
+  dom.classList.add("duration-500");
+  dom.classList.toggle("max-h-65");
+  setTimeout(function () {
+    dom.classList.remove("duration-500");
+  }, 500);
 }); // product.html - tabs 區塊切換
 
 Array.from(document.querySelectorAll("#tabs-list li a")).forEach(function (item) {
