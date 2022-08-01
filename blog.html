@@ -30,20 +30,20 @@
           menu
         </div>
         <ul
-          class="absolute top-20 right-0 max-h-0 w-full overflow-hidden bg-gray-dark text-center text-lg duration-500 md:static md:flex md:max-h-full md:w-auto md:gap-x-16 md:bg-transparent md:text-base md:duration-[0s]"
+          class="absolute top-20 right-0 z-10 max-h-0 w-full overflow-hidden bg-gray-dark text-center text-lg duration-500 md:static md:flex md:max-h-full md:w-auto md:gap-x-16 md:bg-transparent md:text-base md:duration-[0s]"
           id="menu-list"
         >
           <li class="border-b border-b-white py-4 md:border-b-0">
             <a
               href="product.html"
-              class="hover:-translate-y-1 block text-white md:text-xl"
+              class="md:hover:-translate-y-1 block text-white md:text-xl"
               >系列鏡框</a
             >
           </li>
           <li class="border-b border-b-white py-4 md:border-b-0">
             <a
               href="store.html"
-              class="hover:-translate-y-1 block text-white md:text-xl"
+              class="md:hover:-translate-y-1 block text-white md:text-xl"
               >門市據點</a
             >
           </li>
@@ -57,7 +57,7 @@
           <li class="py-4">
             <a
               href="faq.html"
-              class="hover:-translate-y-1 block text-white md:text-xl"
+              class="md:hover:-translate-y-1 block text-white md:text-xl"
               >常見問題</a
             >
           </li>
@@ -66,9 +66,11 @@
     </header>
 
     
-<nav class="hidden bg-main-dark md:block">
+<nav class="bg-main-dark">
   <div class="container flex items-center justify-between">
-    <ul class="font-blod flex gap-x-12 text-xl">
+    <ul
+      class="font-blod flex justify-between text-xl grow md:justify-start md:gap-x-12"
+    >
       <li class="py-[13px]">
         <a
           href="#"
@@ -99,7 +101,7 @@
       </li>
     </ul>
     <span
-      class="material-symbols-outlined cursor-pointer select-none text-[40px] text-white"
+      class="material-symbols-outlined hidden cursor-pointer select-none text-[40px] text-white md:inline"
       >search</span
     >
   </div>
@@ -355,15 +357,24 @@
       </li>
     </ul>
   </section>
-  <section data-target="detail" class="hidden pt-4 pb-16 md:pt-2 md:pb-20 lg:pt-6">
+  <section
+    data-target="detail"
+    class="hidden pt-4 pb-16 md:pt-2 md:pb-20 lg:pt-6"
+  >
     <ul class="mb-2 flex">
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="index.html">首頁</a>
       </li>
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="blog.html">部落格</a>
       </li>
-      <li class="relative mr-1 after:mr-1 after:content-['/']">
+      <li
+        class="relative mr-1 after:mr-1 after:content-['/'] hover:text-main-dark"
+      >
         <a href="blog.html">特別企劃</a>
       </li>
       <li class="">
@@ -372,61 +383,138 @@
     </ul>
     <ul class="mb-2 flex gap-x-4">
       <li>
-        <a href="#" class="text-2xl font-bold text-main">#special</a>
+        <a href="#" class="text-2xl font-bold text-main hover:text-main-dark"
+          >#special</a
+        >
       </li>
       <li>
-        <a href="#" class="text-2xl font-bold text-main">#event</a>
+        <a href="#" class="text-2xl font-bold text-main hover:text-main-dark"
+          >#event</a
+        >
       </li>
     </ul>
-    <div class="md:w-8/12">
-      <h2 class="text-2xl md:text-5xl">情人特別企劃</h2>
-      <h3 class="mb-4 font-medium md:mb-6 md:text-2xl lg:mb-4">
-        2020 Valentine’s Special
-      </h3>
-      <img
-        src="./assets/images/blogpage-1.png"
-        alt="image"
-        class="mb-2 max-w-full"
-      />
-      <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
-        一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
-        本次拍攝的鏡框款式與 NEEDS CLASSIC
-        聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-      </p>
-      <img
-        src="./assets/images/blogpage-2.png"
-        alt="image"
-        class="mb-2 max-w-full"
-      />
-      <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
-        一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
-        本次拍攝的鏡框款式與 NEEDS CLASSIC
-        聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-      </p>
-      <img
-        src="./assets/images/blogpage-3.png"
-        alt="image"
-        class="mb-2 max-w-full"
-      />
-      <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
-        一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
-        本次拍攝的鏡框款式與 NEEDS CLASSIC
-        聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-      </p>
-      <img
-        src="./assets/images/blogpage-4.png"
-        alt="image"
-        class="mb-2 max-w-full"
-      />
-      <p class="text-gray-content lg:mb-10">
-        2/14(五)-2/20(日)<br />
-        至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br />
-        期間優惠還有~~持他牌鏡框更換鏡片<br />
-        薄型非球面鏡片折300元<br />
-        濾藍光鏡片折500元<br />
-        快快帶上另一半<br />
-        讓彼此每一次睜開眼，都被愛的視線包圍!
-      </p>
+    <div class="flex flex-wrap">
+      <div class="w-full md:pr-3 md:w-9/12 lg:w-8/12">
+        <h2 class="text-2xl md:text-5xl">情人特別企劃</h2>
+        <h3 class="mb-4 font-medium md:mb-6 md:text-2xl lg:mb-4">
+          2020 Valentine’s Special
+        </h3>
+        <img
+          src="./assets/images/blogpage-1.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-2.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-3.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="mb-4 text-gray-content md:mb-6 lg:mb-10">
+          一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br />
+          本次拍攝的鏡框款式與 NEEDS CLASSIC
+          聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+        </p>
+        <img
+          src="./assets/images/blogpage-4.png"
+          alt="image"
+          class="mb-2 max-w-full"
+        />
+        <p class="text-gray-content md:mb-10">
+          2/14(五)-2/20(日)<br />
+          至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br />
+          期間優惠還有~~持他牌鏡框更換鏡片<br />
+          薄型非球面鏡片折300元<br />
+          濾藍光鏡片折500元<br />
+          快快帶上另一半<br />
+          讓彼此每一次睜開眼，都被愛的視線包圍!
+        </p>
+        <div class="mb-4 hidden items-center md:flex">
+          <span class="mr-4 font-bold">Share</span>
+          <ul class="flex gap-x-4">
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/images/logo-facebook.png"
+                  alt="Facebook"
+                  class="h-6 w-6 md:hover:drop-shadow-[0_0_4px_#aa0601]"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/images/logo-instagram.png"
+                  alt="Instagram"
+                  class="h-6 w-6 md:hover:drop-shadow-[0_0_4px_#aa0601]"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="hidden pl-3 md:block md:w-3/12 lg:w-4/12">
+        <h2
+          class="mb-2 flex items-center text-2xl font-bold uppercase text-main lg:mb-1 lg:text-[32px]"
+        >
+          <span
+            class="material-symbols-outlined mr-[2px] text-base lg:mr-3 lg:text-5xl"
+            >label</span
+          >Tags
+        </h2>
+        <ul
+          class="flex flex-wrap gap-x-4 text-base font-bold lg:w-3/4 lg:gap-x-6 lg:gap-y-1 lg:text-2xl"
+        >
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#special</a>
+          </li>
+          <li><a href="#" class="text-main hover:text-main-dark">#sale</a></li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#new_item</a>
+          </li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#interview</a>
+          </li>
+          <li>
+            <a href="#" class="text-main hover:text-main-dark">#trivia</a>
+          </li>
+          <li><a href="#" class="text-main hover:text-main-dark">#news</a></li>
+          <li><a href="#" class="text-main hover:text-main-dark">#event</a></li>
+        </ul>
+      </aside>
+      <ul
+        class="hidden pt-6 before:absolute before:top-0 before:left-0 before:h-[1px] before:w-[calc(100%-12px)] before:bg-gray-dark before:content-[''] md:relative md:flex md:w-full md:justify-between lg:w-8/12 lg:pr-3"
+      >
+        <li>
+          <a href="#" class="text-black hover:text-main">
+            <span class="material-symbols-outlined mr-3 align-middle"
+              >arrow_back</span
+            ><span class="align-middle">上一篇：街頭潮人訪問 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-main">
+            <span class="align-middle">下一篇：街頭潮人訪問 2</span
+            ><span class="material-symbols-outlined ml-3 align-middle"
+              >arrow_forward</span
+            >
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
