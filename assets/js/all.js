@@ -4,7 +4,7 @@
 document.querySelector("#hamburger-menu-icon").addEventListener("click", function () {
   var dom = document.querySelector("#menu-list");
   dom.classList.add("duration-500");
-  dom.classList.toggle("max-h-65");
+  dom.classList.toggle("max-h-min");
   setTimeout(function () {
     dom.classList.remove("duration-500");
   }, 500);

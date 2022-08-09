@@ -411,10 +411,6 @@ a{
     transition: color 0.3s, background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
-img{
-  vertical-align: middle;
-}
-
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -506,8 +502,8 @@ img{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 242 / var(--tw-bg-opacity));
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
@@ -538,7 +534,7 @@ img{
     position: absolute;
     left: 0px;
     bottom: 0px;
-    height: 2px;
+    height: 0.125rem;
     width: 100%;
     content: var(--tw-content);
     --tw-bg-opacity: 1;
@@ -602,8 +598,8 @@ img{
 .mr-4{
   margin-right: 1rem;
 }
-.mr-\[2px\]{
-  margin-right: 2px;
+.mr-1\.5{
+  margin-right: 0.375rem;
 }
 .mr-3{
   margin-right: 0.75rem;
@@ -648,6 +644,11 @@ img{
 }
 .max-h-0{
   max-height: 0px;
+}
+.max-h-min{
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
 }
 .min-h-\[208px\]{
   min-height: 208px;
@@ -874,11 +875,11 @@ img{
 .bg-cover{
   background-size: cover;
 }
-.bg-contain{
-  background-size: contain;
-}
 .bg-center{
   background-position: center;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -891,13 +892,17 @@ img{
   padding-top: 13px;
   padding-bottom: 13px;
 }
-.py-\[10px\]{
-  padding-top: 10px;
-  padding-bottom: 10px;
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
-.px-\[14px\]{
-  padding-left: 14px;
-  padding-right: 14px;
+.px-3\.5{
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -907,10 +912,6 @@ img{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -919,9 +920,13 @@ img{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.py-\[6px\]{
-  padding-top: 6px;
-  padding-bottom: 6px;
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 .px-6{
   padding-left: 1.5rem;
@@ -936,23 +941,26 @@ img{
 .pl-3{
   padding-left: 0.75rem;
 }
-.pt-\[10px\]{
-  padding-top: 10px;
+.pt-2\.5{
+  padding-top: 0.625rem;
 }
-.pr-\[12px\]{
-  padding-right: 12px;
+.pr-3{
+  padding-right: 0.75rem;
 }
-.pb-\[10px\]{
-  padding-bottom: 10px;
+.pb-2\.5{
+  padding-bottom: 0.625rem;
 }
 .pl-\[13px\]{
   padding-left: 13px;
 }
+.pt-2{
+  padding-top: 0.5rem;
+}
+.pb-2{
+  padding-bottom: 0.5rem;
+}
 .pr-\[13px\]{
   padding-right: 13px;
-}
-.pl-\[12px\]{
-  padding-left: 12px;
 }
 .pt-4{
   padding-top: 1rem;
@@ -960,11 +968,14 @@ img{
 .pt-6{
   padding-top: 1.5rem;
 }
-.pt-\[6px\]{
-  padding-top: 6px;
+.pt-1\.5{
+  padding-top: 0.375rem;
 }
 .pb-\[5px\]{
   padding-bottom: 5px;
+}
+.pt-1{
+  padding-top: 0.25rem;
 }
 .pt-\[68\.97\%\]{
   padding-top: 68.97%;
@@ -975,14 +986,11 @@ img{
 .pt-\[36\.17\%\]{
   padding-top: 36.17%;
 }
-.pl-\[14px\]{
-  padding-left: 14px;
+.pl-3\.5{
+  padding-left: 0.875rem;
 }
-.pr-\[14px\]{
-  padding-right: 14px;
-}
-.text-left{
-  text-align: left;
+.pr-3\.5{
+  padding-right: 0.875rem;
 }
 .text-center{
   text-align: center;
@@ -1093,9 +1101,6 @@ img{
        -o-transition-duration: 500ms;
           transition-duration: 500ms;
 }
-.max-h-65 {
-    max-height: 260px;
-  }
 .marker\:mb-2 *::marker{
   margin-bottom: 0.5rem;
 }
@@ -1129,7 +1134,7 @@ img{
   content: var(--tw-content);
   left: 0px;
 }
-.before\:h-\[1px\]::before{
+.before\:h-px::before{
   content: var(--tw-content);
   height: 1px;
 }
@@ -1145,6 +1150,13 @@ img{
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
+}
+.after\:inset-0::after{
+  content: var(--tw-content);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .after\:bottom-0::after{
   content: var(--tw-content);
@@ -1166,9 +1178,13 @@ img{
   content: var(--tw-content);
   margin-right: 0.25rem;
 }
-.after\:h-\[2px\]::after{
+.after\:h-1\.5::after{
   content: var(--tw-content);
-  height: 2px;
+  height: 0.375rem;
+}
+.after\:h-1::after{
+  content: var(--tw-content);
+  height: 0.25rem;
 }
 .after\:h-full::after{
   content: var(--tw-content);
