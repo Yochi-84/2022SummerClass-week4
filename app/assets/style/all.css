@@ -14,10 +14,6 @@
     @apply no-underline;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
   }
-
-  img {
-    @apply align-middle;
-  }
 }
 
 @layer components {
@@ -31,12 +27,12 @@
 
   .form-group>input,
   .form-group>textarea {
-    @apply py-[6px] px-3 mb-4 bg-main-light border border-black appearance-none focus:outline-none focus:ring-main-dark focus:ring-1;
+    @apply py-1.5 px-3 mb-4 bg-main-light border border-black appearance-none focus:outline-none focus:ring-main-dark focus:ring-1;
   }
 
   /* header 連結底線 */
   .link {
-    @apply lg:relative lg:after:left-0 lg:after:absolute lg:after:bottom-0 lg:after:h-[2px] lg:after:w-full lg:after:bg-white after:content-[''] lg:cursor-default lg:pointer-events-none;
+    @apply lg:relative lg:after:left-0 lg:after:absolute lg:after:bottom-0 lg:after:h-0.5 lg:after:w-full lg:after:bg-white after:content-[''] lg:cursor-default lg:pointer-events-none;
   }
 
   /* tabs active 底線 */
